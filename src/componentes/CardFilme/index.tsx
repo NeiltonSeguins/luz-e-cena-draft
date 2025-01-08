@@ -1,6 +1,7 @@
 import styles from "./Card.module.css";
 import { Filme } from "../../types";
 import Tag from "../Tag";
+import Titulo from "../Titulo";
 
 const CardFilme = (props: Filme) => {
   const { src, alt, titulo, categoria, censura, genero, duracao } = props;
@@ -8,7 +9,7 @@ const CardFilme = (props: Filme) => {
     <li className={styles.card}>
       <img src={src} alt={alt} />
       <div className={styles.container}>
-        <h3>{titulo}</h3>
+        <Titulo elemento="h3" titulo={titulo} />
         <div className={styles.informacoes}>
           <div className={styles.linha1}>
             <p>{genero}</p>

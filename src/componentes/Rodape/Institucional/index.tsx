@@ -1,10 +1,11 @@
 import Link from "../../Link";
+import Titulo from "../../Titulo";
 import styles from "../Rodape.module.css";
 
 const Institucional = () => {
   return (
     <div className={styles.institucional}>
-      <h4 className={styles.titulo}>Institucional</h4>
+      <Titulo elemento="h4" titulo="Institucional" className={styles.titulo} />
       <Link className={styles.ancora} href="#">
         Sobre nós
       </Link>

@@ -1,9 +1,8 @@
-import { FaSearch } from "react-icons/fa";
 import { Filme } from "../../types";
-import CardFilme from "../CardFilme";
-import InputText from "../InputText";
-import Link from "../Link";
 import styles from "./ListaDeCards.module.css";
+import Filtros from "../Filtros";
+import Titulo from "../Titulo";
+import ListaFilmes from "../ListaFilmes";
 
 const filmes: Filme[] = [
   {
@@ -84,20 +83,9 @@ const ListaDeCards = () => {
   return (
     <main>
       <section className={styles.container}>
-        {/* Componente de filtros */}
-        <div className={styles.ancoras}>
-          <Link href="#">Em cartaz</Link>
-          <Link href="#">Em breve</Link>
-        </div>
-        <InputText variant="secondary" icon={<FaSearch />} />
-        {/* Seção de filmes em cartaz */}
-        <h2 className={styles.titulo}>Em cartaz</h2>
-        {/* Componente de lista de filmes */}
-        <ul className={styles.lista}>
-          {filmes.map((filme, index) => (
-            <CardFilme key={index} {...filme} />
-          ))}
-        </ul>
+        <Filtros />
+        <Titulo elemento="h1" titulo="Em cartaz" />
+        <ListaFilmes filmes={filmes} />
       </section>
     </main>
   );

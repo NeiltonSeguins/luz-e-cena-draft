@@ -1,0 +1,6 @@
+.ancoras {
+  display: flex;
+  gap: var(--gap-m);
+  margin-bottom: var(--margin-xl);
+  align-self: flex-start;
+}

@@ -5,27 +5,3 @@
   margin: var(--margin-xl) 0;
   max-width: 1200px;
 }
-
-.ancoras {
-  display: flex;
-  gap: var(--gap-m);
-  margin-bottom: var(--margin-xl);
-  align-self: flex-start;
-}
-
-.titulo {
-  color: var(--preto);
-  font-family: var(--fonte-titulo);
-  font-size: var(--font-size-xl);
-  align-self: flex-start;
-}
-
-.lista {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--gap-m);
-  list-style-type: none;
-  margin-bottom: var(--margin-xxl);
-  justify-content: space-around;
-  padding-left: 0;
-}

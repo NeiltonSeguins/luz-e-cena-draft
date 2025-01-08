@@ -1,0 +1,6 @@
+.titulo {
+  color: var(--preto);
+  font-family: var(--fonte-titulo);
+  font-size: var(--font-size-xl);
+  align-self: flex-start;
+}
